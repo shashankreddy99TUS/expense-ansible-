@@ -2,6 +2,11 @@
   hosts: mysql
   become: yes
   tasks:
+  - name: Install MySQL libraries
+    ansible.builtin.pip:
+     name: PyMYSQL
+     executable: pip3.9
+
   - name: Install MYSQL server 
     ansible.builtin.package:
      name: mysql-server
