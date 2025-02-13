@@ -5,4 +5,4 @@
   - name: Install MYSQL server 
     ansible.builtin.package:
      name: mysql-server
-     state: Installed
+     state: present
