@@ -73,7 +73,7 @@
 
 
   - name: daemon reload and restart service
-    ansible.builtin.systemd_service:
+    ansible.builtin.systemd:
       enabled: true
       state: restarted
       daemon_reload: true
