@@ -69,10 +69,10 @@
      target: /app/schema/backend.sql
  
  
-  - name: unmask backend service (if masked)
+  - name: unmask backend service 
     ansible.builtin.command:
-    cmd: systemctl unmask backend.service
-    ignore_errors: yes 
+     cmd: systemctl unmask backend.service
+     ignore_errors: yes 
 
 
   - name: daemon reload and restart service
