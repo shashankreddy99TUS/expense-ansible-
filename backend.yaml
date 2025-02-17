@@ -70,7 +70,7 @@
  
  
   - name: unmask backend service (if masked)
-  ansible.builtin.command:
+    ansible.builtin.command:
     cmd: systemctl unmask backend.service
     ignore_errors: yes 
 
