@@ -67,14 +67,7 @@
      login_password: ExpenseApp@1
      login_host: mysql.daws82s.life
      target: /app/schema/backend.sql
- 
- 
-  - name: unmask backend service 
-    ansible.builtin.command:
-     cmd: systemctl unmask backend.service
-     ignore_errors: yes 
-
-
+     
   - name: daemon reload and restart service
     ansible.builtin.systemd_service:
       enabled: true
